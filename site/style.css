@@ -3,13 +3,12 @@
     --nav-background: #D93D7E;
     --background-color: #cdb4be;
     --font-color: #59464E;
-    --text-color: #333;
+    --hover-color: #333;
   }
-
 
 * {
     margin: 0;
-    padding: 0 13px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -65,21 +64,21 @@ header p{
 
 .nav-hor li a:hover {
     background-color: #a7a8a9;
-    color: #2b2d42;
+    color: var(--hover-color);
     box-sizing: 0 8px 16px rgba(237, 242, 244, 0.4);
 }
 
 /* Section */
 .content {
-    display: flex; /* Alinha section e aside lado a lado */
-    gap: 20px; /* Espaço entre o section e o aside */
-    margin: 20px 0; /* Margem vertical ao redor do conteúdo */
-    padding: 0 10px; /* Espaço nas laterais para manter o conteúdo afastado */
+    display: flex;
+    gap: 20px;
+    margin: 20px 0; 
+    padding: 0 30px;
 }
 
 section {
-    flex: 0 0 70%; /* Garante que a section ocupe 70% do espaço */
-    padding-right: 20px; /* Espaço à direita para distanciar do aside */
+    flex: 0 0 70%; 
+    padding-right: 40px;
 }
 
 section p{
@@ -87,12 +86,19 @@ section p{
 }
 
 section img {
-    max-width: 100%; /* Faz com que a imagem seja responsiva e não ultrapasse o tamanho do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove o espaço abaixo da imagem */
-    margin: 20px auto; /* Centraliza a imagem horizontalmente */
-    border-radius: 10px; /* Arredonda os cantos da imagem */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
+    max-width: 70%; 
+    height: auto;
+    display: block; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--font-color);
+    margin-top: 5px;
 }
 
 .quote-content{
@@ -104,7 +110,7 @@ section img {
 
 /* Aside */
 aside {
-    flex: 0 0 30%; /* Garante que o aside ocupe 30% do espaço */
+    flex: 0 0 30%; 
     border-left: 5px solid var(--nav-background);
     padding: 20px;
     font-family: "Roboto Mono", monospace;
@@ -129,7 +135,7 @@ aside li a {
 }
 
 aside li a:hover {
-    color: #333;
+    color: var(--hover-color);
 }
 
 /* Footer */
@@ -139,4 +145,3 @@ footer {
     align-items: center;
     padding-top: 5px;
 }
-
