@@ -1,0 +1,141 @@
+
+:root {
+    --nav-background: #D93D7E;
+    --background-color: #cdb4be;
+    --font-color: #59464E;
+    --text-color: #333;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;;
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    text-align: center; 
+    padding: 20px 0;
+}
+
+header p{
+    padding: 20px;
+    margin: 0 70px;
+}
+
+.quote-header{
+    color: var(--nav-background);
+    font-weight: 600;
+}
+
+/* Menu */
+.nav-hor{
+    background-color: var(--nav-background);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-hor ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-hor li {
+    margin: 0 30px;
+}
+
+.nav-hor li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-hor li a:hover {
+    background-color: #a7a8a9;
+    color: #2b2d42;
+    box-sizing: 0 8px 16px rgba(237, 242, 244, 0.4);
+}
+
+/* Section */
+.content {
+    display: flex; /* Usa flexbox para alinhar section e aside lado a lado */
+    justify-content: space-between; /* Espaça os itens */
+    margin: 20px 0; /* Margem vertical ao redor do conteúdo */
+}
+
+section {
+    flex: 1; /* Permite que a seção ocupe espaço disponível */
+    margin: 0 60px; /* Espaço entre a seção e o aside */
+
+}
+
+section p{
+    padding-top: 30px;
+}
+
+section img {
+    max-width: 100%; /* Faz com que a imagem seja responsiva e não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente com margem em cima e embaixo */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
+}
+
+.quote-content{
+    border-left: 13px solid var(--nav-background);
+    padding: 25px;
+    font-family: "Roboto Mono", monospace;
+    color: var(--font-color);
+}
+
+/* Aside */
+aside {
+    width: 350px;
+    border-left: 5px solid var(--nav-background);
+    padding: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: var(--font-color);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+aside li a {
+    color: var(--nav-background);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+aside li a:hover {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
