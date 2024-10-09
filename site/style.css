@@ -9,7 +9,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 13px;
     box-sizing: border-box;
 }
 
@@ -71,15 +71,15 @@ header p{
 
 /* Section */
 .content {
-    display: flex; /* Usa flexbox para alinhar section e aside lado a lado */
-    justify-content: space-between; /* Espaça os itens */
+    display: flex; /* Alinha section e aside lado a lado */
+    gap: 20px; /* Espaço entre o section e o aside */
     margin: 20px 0; /* Margem vertical ao redor do conteúdo */
+    padding: 0 10px; /* Espaço nas laterais para manter o conteúdo afastado */
 }
 
 section {
-    flex: 1; /* Permite que a seção ocupe espaço disponível */
-    margin: 0 60px; /* Espaço entre a seção e o aside */
-
+    flex: 0 0 70%; /* Garante que a section ocupe 70% do espaço */
+    padding-right: 20px; /* Espaço à direita para distanciar do aside */
 }
 
 section p{
@@ -90,7 +90,7 @@ section img {
     max-width: 100%; /* Faz com que a imagem seja responsiva e não ultrapasse o tamanho do contêiner */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Remove o espaço abaixo da imagem */
-    margin: 20px auto; /* Centraliza a imagem horizontalmente com margem em cima e embaixo */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente */
     border-radius: 10px; /* Arredonda os cantos da imagem */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
 }
@@ -104,7 +104,7 @@ section img {
 
 /* Aside */
 aside {
-    width: 350px;
+    flex: 0 0 30%; /* Garante que o aside ocupe 30% do espaço */
     border-left: 5px solid var(--nav-background);
     padding: 20px;
     font-family: "Roboto Mono", monospace;
@@ -137,5 +137,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
 }
 
